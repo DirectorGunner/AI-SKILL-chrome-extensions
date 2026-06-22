@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {
+      "topic": "Runtime, Events & Lifecycle Timers",
+      "file": "references/api-runtime-lifecycle.md",
+      "summary": "chrome.runtime messaging and lifecycle events, the shared chrome.events machinery, and the alarms/idle/power scheduling APIs.",
+      "keywords": ["runtime", "events", "alarms", "idle", "power", "onInstalled", "onMessage"]
+    },
+    {
+      "topic": "Offscreen, Messaging Services & Shared Types",
+      "file": "references/api-runtime-misc.md",
+      "summary": "chrome.offscreen DOM access, chrome.gcm/instanceID cloud messaging, chrome.extension, and the chrome.types/extensionTypes/dom namespaces.",
+      "keywords": ["offscreen", "gcm", "instanceID", "extension", "types", "extensionTypes", "dom"]
+    },
+    {
+      "topic": "Scripting & User Scripts",
+      "file": "references/api-scripting-userscripts.md",
+      "summary": "chrome.scripting (executeScript, insertCSS, registerContentScripts) and chrome.userScripts for arbitrary user code.",
+      "keywords": ["scripting", "userScripts", "executeScript", "insertCSS", "ISOLATED", "MAIN"]
+    },
+    {
+      "topic": "Tabs, Tab Groups & Windows",
+      "file": "references/api-tabs-windows.md",
+      "summary": "chrome.tabs, chrome.tabGroups, and chrome.windows for managing tabs, groups, and browser windows.",
+      "keywords": ["tabs", "tabGroups", "windows", "query", "sendMessage", "activeTab"]
+    },
+    {
+      "topic": "Navigation, History, Sessions & Search",
+      "file": "references/api-navigation-history.md",
+      "summary": "chrome.webNavigation, sessions, history, topSites, bookmarks, readingList, processes, and search.",
+      "keywords": ["webNavigation", "sessions", "history", "topSites", "bookmarks", "readingList", "processes", "search"]
+    },
+    {
+      "topic": "Network Filtering & Request APIs",
+      "file": "references/api-network-filtering.md",
+      "summary": "chrome.declarativeNetRequest, webRequest, declarativeContent, proxy, cookies, and dns; MV3 blocking is declarative.",
+      "keywords": ["declarativeNetRequest", "webRequest", "declarativeContent", "proxy", "cookies", "dns"]
+    },
+    {
+      "topic": "Storage & Browser Settings",
+      "file": "references/api-storage-settings.md",
+      "summary": "chrome.storage areas and quotas plus contentSettings, privacy, fontSettings, and browsingData.",
+      "keywords": ["storage", "contentSettings", "privacy", "fontSettings", "browsingData", "QUOTA_BYTES"]
+    },
+    {
+      "topic": "UI Surfaces",
+      "file": "references/api-ui-surfaces.md",
+      "summary": "chrome.action, contextMenus, sidePanel, omnibox, notifications, and commands.",
+      "keywords": ["action", "contextMenus", "sidePanel", "omnibox", "notifications", "commands"]
+    },
+    {
+      "topic": "DevTools Extension APIs & Debugger",
+      "file": "references/api-devtools-debugger.md",
+      "summary": "chrome.devtools.inspectedWindow/network/panels/performance/recorder and chrome.debugger (CDP).",
+      "keywords": ["devtools.inspectedWindow", "devtools.network", "devtools.panels", "devtools.performance", "devtools.recorder", "debugger"]
+    },
+    {
+      "topic": "Identity & Authentication",
+      "file": "references/api-identity-auth.md",
+      "summary": "chrome.identity OAuth flows, loginState, certificateProvider, platformKeys, and webAuthenticationProxy.",
+      "keywords": ["identity", "loginState", "certificateProvider", "platformKeys", "webAuthenticationProxy", "oauth2"]
+    },
+    {
+      "topic": "Media Capture & Speech",
+      "file": "references/api-media-capture.md",
+      "summary": "chrome.tabCapture, desktopCapture, pageCapture, audio, tts, and ttsEngine.",
+      "keywords": ["tabCapture", "desktopCapture", "pageCapture", "audio", "tts", "ttsEngine"]
+    },
+    {
+      "topic": "Downloads, Management & Permissions",
+      "file": "references/api-downloads-management-permissions.md",
+      "summary": "chrome.downloads, chrome.management, and the runtime chrome.permissions API for optional permissions.",
+      "keywords": ["downloads", "management", "permissions", "optional_permissions", "request"]
+    },
+    {
+      "topic": "System & Hardware",
+      "file": "references/api-system-hardware.md",
+      "summary": "system.cpu/display/memory/storage, systemLog, printing, printerProvider, printingMetrics, documentScan, and accessibilityFeatures.",
+      "keywords": ["system.cpu", "system.display", "system.memory", "system.storage", "systemLog", "printing", "printerProvider", "printingMetrics", "documentScan", "accessibilityFeatures"]
+    },
+    {
+      "topic": "Enterprise & ChromeOS",
+      "file": "references/api-enterprise-chromeos.md",
+      "summary": "enterprise.deviceAttributes/hardwarePlatform/login/networkingAttributes/platformKeys, fileBrowserHandler, fileSystemProvider, input.ime, wallpaper, and vpnProvider.",
+      "keywords": ["enterprise.deviceAttributes", "enterprise.hardwarePlatform", "enterprise.login", "enterprise.networkingAttributes", "enterprise.platformKeys", "fileBrowserHandler", "fileSystemProvider", "input.ime", "wallpaper", "vpnProvider"]
+    },
+    {
+      "topic": "Internationalization (i18n)",
+      "file": "references/api-i18n.md",
+      "summary": "chrome.i18n message lookup, UI language, language detection, default_locale, and _locales catalogs.",
+      "keywords": ["i18n", "getMessage", "default_locale", "_locales", "messages.json"]
+    },
+    {
+      "topic": "Extension Architecture & Getting Started",
+      "file": "references/concepts-architecture.md",
+      "summary": "The MV3 package, manifest, service worker, content scripts, UI surfaces, and how they communicate.",
+      "keywords": ["architecture", "manifest", "service worker", "content scripts", "components"]
+    },
+    {
+      "topic": "The MV3 Background Service Worker",
+      "file": "references/concepts-service-workers.md",
+      "summary": "Registering the service worker, its event-driven lifecycle, termination, top-level listeners, alarms, and offscreen documents.",
+      "keywords": ["service worker", "background", "lifecycle", "termination", "alarms", "offscreen"]
+    },
+    {
+      "topic": "Content Scripts",
+      "file": "references/concepts-content-scripts.md",
+      "summary": "Static vs dynamic injection, the ISOLATED vs MAIN world, run_at timing, match patterns, and CSS injection.",
+      "keywords": ["content scripts", "isolated world", "MAIN", "run_at", "match patterns", "executeScript"]
+    },
+    {
+      "topic": "Message Passing",
+      "file": "references/concepts-messaging.md",
+      "summary": "One-time messages, ports, cross-extension and external messaging, and native messaging with the nativeMessaging permission.",
+      "keywords": ["messaging", "sendMessage", "onMessage", "Port", "connect", "nativeMessaging"]
+    },
+    {
+      "topic": "Declaring Permissions & Match Patterns",
+      "file": "references/concepts-permissions.md",
+      "summary": "permissions vs host_permissions, optional permissions, runtime requests, activeTab, and host match patterns.",
+      "keywords": ["permissions", "host_permissions", "optional_permissions", "activeTab", "match patterns"]
+    },
+    {
+      "topic": "Storage, State & Cross-Origin Isolation",
+      "file": "references/concepts-storage-state.md",
+      "summary": "Choosing chrome.storage areas, persisting worker state, cookies access, and cross-origin isolation keys.",
+      "keywords": ["storage", "state", "cookies", "cross_origin_embedder_policy", "cross_origin_opener_policy"]
+    },
+    {
+      "topic": "Extension Lifecycle & Updates",
+      "file": "references/concepts-lifecycle-updates.md",
+      "summary": "Install/update/startup events, update rollout, onUpdateAvailable/requestUpdateCheck, and setUninstallURL.",
+      "keywords": ["lifecycle", "onInstalled", "onStartup", "update", "onUpdateAvailable", "setUninstallURL"]
+    },
+    {
+      "topic": "Security & Privacy",
+      "file": "references/concepts-security-privacy.md",
+      "summary": "No remotely hosted code, content_security_policy, web_accessible_resources, and minimal-permission/privacy practices.",
+      "keywords": ["security", "remotely hosted code", "content_security_policy", "web_accessible_resources", "privacy"]
+    },
+    {
+      "topic": "MV2 to MV3 Migration",
+      "file": "references/concepts-mv2-to-mv3-migration.md",
+      "summary": "Concrete OLD-to-NEW manifest, API, background, and security changes to convert an MV2 extension to MV3.",
+      "keywords": ["migration", "manifest_version", "service_worker", "scripting", "declarativeNetRequest", "MV2"]
+    },
+    {
+      "topic": "Manifest Format & Core Keys",
+      "file": "references/manifest-format-core-keys.md",
+      "summary": "The manifest file format and identity keys: manifest_version, name, version, icons, default_locale, key, and more.",
+      "keywords": ["manifest_version", "name", "version", "icons", "default_locale", "key", "minimum_chrome_version"]
+    },
+    {
+      "topic": "Manifest Capability Keys",
+      "file": "references/manifest-capability-keys.md",
+      "summary": "Functional keys: action, background, content_scripts, permissions, content_security_policy, side_panel, oauth2, and others.",
+      "keywords": ["action", "background", "content_scripts", "permissions", "content_security_policy", "side_panel", "oauth2"]
+    },
+    {
+      "topic": "Manifest Specialized Keys",
+      "file": "references/manifest-specialized-keys.md",
+      "summary": "Niche keys: file_browser_handlers, file_handlers, file_system_provider_capabilities, input_components, tts_engine, COEP/COOP, shared_modules, trial_tokens, requirements, event_rules, devtools_page.",
+      "keywords": ["file_handlers", "input_components", "tts_engine", "cross_origin_embedder_policy", "shared_modules", "trial_tokens", "devtools_page"]
+    },
+    {
+      "topic": "Permissions List",
+      "file": "references/permissions-list.md",
+      "summary": "The named permission strings usable in permissions/optional_permissions, grouped by area, plus the host-permission distinction.",
+      "keywords": ["permissions", "permission strings", "optional_permissions", "host_permissions", "all_urls"]
+    },
+    {
+      "topic": "UI & DevTools How-Tos",
+      "file": "references/howto-ui-and-devtools.md",
+      "summary": "Accessibility, favicons via _favicon/, localization message formats, notifications, and extending DevTools.",
+      "keywords": ["a11y", "favicon", "localization", "notifications", "devtools_page"]
+    },
+    {
+      "topic": "Web Platform How-Tos",
+      "file": "references/howto-web-platform.md",
+      "summary": "Geolocation, screen capture, WebSockets, WebHID, WebUSB, and origin trials from an MV3 extension.",
+      "keywords": ["geolocation", "screen capture", "WebSocket", "WebHID", "WebUSB", "origin trials"]
+    },
+    {
+      "topic": "Integrate & Distribute",
+      "file": "references/howto-integrate-distribute.md",
+      "summary": "OAuth via chrome.identity, Google Analytics 4 Measurement Protocol, distribution, and loading an unpacked extension.",
+      "keywords": ["oauth", "getAuthToken", "google analytics", "distribute", "load unpacked"]
+    },
+    {
+      "topic": "Test & Debug",
+      "file": "references/howto-test-debug.md",
+      "summary": "Inspecting the service worker/popup/content scripts, Jest unit tests, and Puppeteer/Selenium end-to-end testing.",
+      "keywords": ["debug", "inspect", "jest", "puppeteer", "selenium", "service worker"]
+    }
+  ]
+}
